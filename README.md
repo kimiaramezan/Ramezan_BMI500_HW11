@@ -19,7 +19,7 @@ I implemented and analyzed:
 
 1. A **classic SIR model** for epidemic spread in a closed population.  
 2. An extended **SEIR model with births and deaths**, including an exposed compartment.  
-3. A **sensitivity analysis** on the SEIR model with respect to the transmission rate \(\beta\) and recovery rate \(\gamma\).
+3. A **sensitivity analysis** on the SEIR model with respect to the transmission rate $\beta$ and recovery rate $\gamma$.
 
 All code and figures are in the notebook:
 
@@ -29,9 +29,9 @@ All code and figures are in the notebook:
 
 ## Key Insights
 
-- In the **SIR model**, starting from one infected case in a population of 1000, the infection curve \(I(t)\) shows a single pronounced wave:
+- In the **SIR model**, starting from one infected case in a population of 1000, the infection curve $I(t)$ shows a single pronounced wave:
   - The infection peaks around **38–39 days**, with roughly **300 infected individuals** at the peak.
-  - The **basic reproductive number** is approximately \(R_0 \approx 3.0\), so each infected person creates about three new infections at the start.
+  - The **basic reproductive number** is approximately $\R_0 \approx 3.0$, so each infected person creates about three new infections at the start.
   - By the end of the simulation, most individuals have moved into the recovered compartment, and the epidemic dies out.
 
 - In the **SEIR model with births and deaths**, the dynamics are richer:
