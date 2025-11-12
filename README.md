@@ -94,7 +94,39 @@ Possible extensions that would make the model more realistic and closer to real-
   - SIR model implementation and simulation (Parts A–C),
   - SEIR model with births/deaths (Part D),
   - Sensitivity analysis over $\beta$ and $\gamma$ (Part E),
-  - All figures and explanations.
+
+---
+
+## All the codes and explanations are in the notebook but below you can see the outputs and a brief description as well!
+
+## SIR model (Parts A–C)
+
+This plot shows a single epidemic wave in a closed population of 1000 people: susceptibles $S(t)$ drop sharply as the infection spreads, $I(t)$ rises to one peak around day ~40 and then falls, and $R(t)$ increases until most of the population has recovered.
+
+![SIR model simulation](sir_simulation.png)
+
+## SEIR model with births/deaths (Part D)
+
+Over one year, the SEIR model produces a large initial wave of infections followed by smaller ripples: births slowly refill the susceptible pool, the exposed class $E(t)$ adds a delay before people become infectious, and the system begins to oscillate toward an endemic level rather than returning to zero cases.
+
+**365 days:**
+
+Over a longer horizon, the repeated waves in the SEIR model are damped and the system settles into an endemic equilibrium: $S(t)$, $E(t)$, $I(t)$, and $R(t)$ stabilize around roughly constant values, with infections persisting at a low but non-zero level.
+
+![SEIR 365 days](seir_365.png)
+
+**1200 days:**
+
+![SEIR 1200 days](seir_1200.png)
+
+## Sensitivity analysis (Part E)
+
+These heatmaps summarize how the transmission rate and recovery rate affect the epidemic. Moving right (higher $\beta4) increases both the peak number of infectious individuals and the total infections, while moving up (higher $\gamma\$) reduces them; the worst outcomes occur at high $\beta4 and low $\gamma$, and the best at low $\beta$ and high $\gamma$.
+
+![Peak and total infections over 365 days](sensitivity_heatmaps.png)
+
+
+    
 
 
 
