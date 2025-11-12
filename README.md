@@ -125,6 +125,7 @@ These heatmaps summarize how the transmission rate and recovery rate affect the 
 
 ![Peak and total infections over 365 days](sensitivity_heatmaps.png)
 
+**Disclaimer:** [ChatGPT 5] was used to complete HW #1.[Parts: A–C-D] to (i) review my SIR/SEIR Python code for correctness and (ii) suggest concise interpretations of the SIR/SEIR and sensitivity plots. I implemented and executed all simulations, produced all figures, chose parameters, and wrote the final analysis and README. I have attached a pdf file of the prompts and the GPT answer in this reporitory.
 
     
 
